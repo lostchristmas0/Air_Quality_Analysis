@@ -14,19 +14,15 @@ This project focused on analysing the air quality in Beijing from 2013 to 2017 a
     * We preprocessed the data by detecting and removing the outliers.
 * Data management
     * We built the database and loaded our data into the database.
-
-### To do plan
-
-* Data resampling
-    * We need to resampling air quality dataset into monthly time series which will compatible with other ecnomic and industrial data.
 * Data analysis
-    * We will apply correlation, clustering and visualization on the dataset to do furthe analysis.
-
+    * We achieved several data mining and reported the results and discussion.
 
 ### Deliverables
 
 * preprocessing.py
 * loaddata.py
+* industry_pollutant.py
+* weather_aqi.py
 
 ## Getting Started
 
@@ -54,7 +50,7 @@ python weather_aqi.py
 python industry_pollutant.py
 ```
 
-### Instruction of data mining (for test purpose)
+## Instruction of data mining (for test purpose)
 * Modify line 183 in "weather_aqi.py" to change file (weather/pollutant csv) address
 * Modify line 240-304 in "weather_aqi.py" to change permutation of weather condition (select which two parameters to use for clustring via commenting out)
 * IAQI of O3 was not considered to simplify the mining
